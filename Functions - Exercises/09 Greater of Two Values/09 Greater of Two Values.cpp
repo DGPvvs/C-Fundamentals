@@ -7,31 +7,25 @@
 int main()
 {
     const std::string INT = "int", CHAR = "char", STRING = "string";
-    auto Bigger = [](auto a, auto b) {return a >= b ? a : b;};
+    auto Bigger = [](auto a, auto b) {return a >= b ? a : b;};   
 
     std::string dataType;
-
     std::getline(std::cin, dataType);
+
+    std::string s1, s2;
+    std::getline(std::cin, s1);
+    std::getline(std::cin, s2);
 
     if (dataType == INT)
     {
-        int int1;
-        int int2;
-        std::cin >> int1 >> int2;
-
-        std::cout << Bigger(int1, int2) << std::endl;
+        std::cout << Bigger(stoi(s1), stoi(s2)) << std::endl;
     }
     else if (dataType == CHAR)
     {
-        char ch1, ch2;
-        std::cin >> ch1 >> ch2;
-        std::cout << Bigger(ch1, ch2) << std::endl;
+        std::cout << Bigger(s1[0], s2[0]) << std::endl;
     }
     else if (dataType == STRING)
     {
-        std::string s1, s2;
-        std::getline(std::cin, s1);
-        std::getline(std::cin, s1);
         std::cout << Bigger(s1, s2) << std::endl;
     }
 }
