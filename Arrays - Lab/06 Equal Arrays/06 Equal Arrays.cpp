@@ -52,8 +52,8 @@ int main()
 
     std::cout << output << std::endl;
 
-    delete arr1;
-    delete arr2;
+    delete[] arr1;
+    delete[] arr2;
 }
 
 //Write a program that :

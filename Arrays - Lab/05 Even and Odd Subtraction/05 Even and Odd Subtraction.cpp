@@ -28,6 +28,8 @@ int main()
         oddSum += arr[i] * (arr[i] % 2);
     }
 
+    delete[] arr;
+
     cout << evenSum - oddSum << endl;
 }
 
