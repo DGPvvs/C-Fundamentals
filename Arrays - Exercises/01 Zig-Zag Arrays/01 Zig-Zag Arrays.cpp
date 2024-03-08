@@ -44,8 +44,8 @@ int main()
 
     std::cout << output1 << std::endl << output2 << std::endl;
 
-    delete arr1;
-    delete arr2;
+    delete[] arr1;
+    delete[] arr2;
 }
 
 void AddNumInArray(int arr[], int n, int idx)

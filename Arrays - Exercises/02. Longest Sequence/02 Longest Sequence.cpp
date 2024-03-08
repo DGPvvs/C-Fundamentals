@@ -62,7 +62,7 @@ int main()
 
 	std::cout << output << std::endl;
 
-	delete arr;
+	delete[] arr;
 }
 
 

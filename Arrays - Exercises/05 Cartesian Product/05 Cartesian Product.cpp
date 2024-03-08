@@ -39,8 +39,8 @@ int main()
 
     std::cout << output << std::endl;
 
-    delete cartesianArr;
-    delete arr;
+    delete[] cartesianArr;
+    delete[] arr;
 
     return 0;
 }

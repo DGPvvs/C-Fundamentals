@@ -33,7 +33,7 @@ int main()
 
     std::cout << closestValue << std::endl;
 
-    delete arr;
+    delete[] arr;
 
     return 0;
 }

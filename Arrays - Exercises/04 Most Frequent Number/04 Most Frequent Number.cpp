@@ -43,7 +43,7 @@ int main()
 
     std::cout << output << std::endl;
 
-    delete counts;
+    delete[] counts;
 
     return 0;
 }

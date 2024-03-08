@@ -35,7 +35,7 @@ int main()
 
     std::cout << output;
 
-    delete arr;
+    delete[] arr;
 
     return 0;
 }
