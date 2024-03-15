@@ -25,6 +25,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08 Orders", "..\08 Orders\0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09 Greater of Two Values", "..\09 Greater of Two Values\09 Greater of Two Values.vcxproj", "{B4072E26-6270-4842-AA36-E19C4F3B5DBE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09 Greater of Two Values ver. 2.0", "..\09 Greater of Two Values ver. 2.0\09 Greater of Two Values ver. 2.0.vcxproj", "{57974CAB-96D1-4B90-9748-19CBFB789FDC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05 Multiply Evens Sum by Odds ver 2.0", "..\05 Multiply Evens Sum by Odds ver 2.0\05 Multiply Evens Sum by Odds ver 2.0.vcxproj", "{78AA798F-8D43-4B52-9B38-A020ED63D8ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +125,22 @@ Global
 		{B4072E26-6270-4842-AA36-E19C4F3B5DBE}.Release|x64.Build.0 = Release|x64
 		{B4072E26-6270-4842-AA36-E19C4F3B5DBE}.Release|x86.ActiveCfg = Release|Win32
 		{B4072E26-6270-4842-AA36-E19C4F3B5DBE}.Release|x86.Build.0 = Release|Win32
+		{57974CAB-96D1-4B90-9748-19CBFB789FDC}.Debug|x64.ActiveCfg = Debug|x64
+		{57974CAB-96D1-4B90-9748-19CBFB789FDC}.Debug|x64.Build.0 = Debug|x64
+		{57974CAB-96D1-4B90-9748-19CBFB789FDC}.Debug|x86.ActiveCfg = Debug|Win32
+		{57974CAB-96D1-4B90-9748-19CBFB789FDC}.Debug|x86.Build.0 = Debug|Win32
+		{57974CAB-96D1-4B90-9748-19CBFB789FDC}.Release|x64.ActiveCfg = Release|x64
+		{57974CAB-96D1-4B90-9748-19CBFB789FDC}.Release|x64.Build.0 = Release|x64
+		{57974CAB-96D1-4B90-9748-19CBFB789FDC}.Release|x86.ActiveCfg = Release|Win32
+		{57974CAB-96D1-4B90-9748-19CBFB789FDC}.Release|x86.Build.0 = Release|Win32
+		{78AA798F-8D43-4B52-9B38-A020ED63D8ED}.Debug|x64.ActiveCfg = Debug|x64
+		{78AA798F-8D43-4B52-9B38-A020ED63D8ED}.Debug|x64.Build.0 = Debug|x64
+		{78AA798F-8D43-4B52-9B38-A020ED63D8ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{78AA798F-8D43-4B52-9B38-A020ED63D8ED}.Debug|x86.Build.0 = Debug|Win32
+		{78AA798F-8D43-4B52-9B38-A020ED63D8ED}.Release|x64.ActiveCfg = Release|x64
+		{78AA798F-8D43-4B52-9B38-A020ED63D8ED}.Release|x64.Build.0 = Release|x64
+		{78AA798F-8D43-4B52-9B38-A020ED63D8ED}.Release|x86.ActiveCfg = Release|Win32
+		{78AA798F-8D43-4B52-9B38-A020ED63D8ED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
