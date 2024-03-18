@@ -31,8 +31,6 @@ int main()
 
     unsigned long long int flagsH = 0, flagsL = 0;
 
-    // Solution #2, Complexity: O(n), Advanced
-
     int runningMax = INT_MIN;
 
     for (int i = n - 1; i >= 0; i--)
@@ -81,7 +79,13 @@ bool carryRight(unsigned long long int* flagsH, unsigned long long int* flagsL)
         result = false;
     }
 
-    *flagsL = (*flagsL >> 1) | (*flagsH & ONE);
+    *flagsL = (*flagsL >> 1);
+    
+    if ((*flagsH & ONE) == ONE)
+    {
+        *flagsL |= HIGHT; // *flagsL = *flagsL | HIGHT;
+    }
+
     *flagsH >>= 1; // *flagsH = *flagsH >> 1; 
 
     return result;
