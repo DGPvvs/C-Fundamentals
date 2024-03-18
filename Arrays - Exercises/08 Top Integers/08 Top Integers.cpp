@@ -1,9 +1,8 @@
-// 08 Top Integers.cpp : This file contains the 'main' function. Program execution begins and ends there.
+ï»¿// 08 Top Integers.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 #include <string>
-#include <cmath>
 
 int main()
 {
@@ -42,10 +41,9 @@ int main()
 }
 
 //Write a program that:
-//•	Read an integer number N (N < 100) from the first line of the console, which represents size of the array
-//•	Read an integer array with the given size from the second line of the console
-//•	Find all the top integers in an array
-//•	Top integer is an integer that is bigger than all the elements to its right
-//•	Print all top integers, separated by single space
-
+//ï¿½	Read an integer number N (N < 100) from the first line of the console, which represents size of the array
+//ï¿½	Read an integer array with the given size from the second line of the console
+//ï¿½	Find all the top integers in an array
+//ï¿½	Top integer is an integer that is bigger than all the elements to its right
+//ï¿½	Print all top integers, separated by single space
 
