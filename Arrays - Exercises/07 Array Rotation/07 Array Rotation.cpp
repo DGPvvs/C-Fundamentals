@@ -63,7 +63,6 @@ void ArrayRottate(int arr[], int step, int arrLength)
         int temp = arr[startIndex];
         bool isCircle = false;
 
-        //while(swapCount <= arrLength && !isCircle)
         while (!isCircle)
         {
             if (currentIndex == startIndex)
