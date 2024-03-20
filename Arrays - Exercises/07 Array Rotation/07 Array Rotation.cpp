@@ -30,15 +30,7 @@ int main() {
 
     if (step != 0)
     {
-        if ((step % 2) == 0 && arrLength % 2 == 0)
-        {
-            ArrayRottate(arr, step - 1, arrLength);
-            ArrayRottate(arr, 1, arrLength);
-        }
-        else
-        {
-            ArrayRottate(arr, step, arrLength);
-        }
+        ArrayRottate(arr, step, arrLength);
     }
 
     for (int i = 0; i < arrLength; ++i)
@@ -55,24 +47,45 @@ int main() {
 
 void ArrayRottate(int arr[], int step, int arrLength)
 {
-    int temp = arr[0];
-    int index = 0;
+    int swapCount = 0;
+    int startIndex = 0;
 
-    for (int i = 0; i < arrLength; i++)
+    while (swapCount < arrLength)
     {
-        index -= step;
+        int currentIndex = startIndex;
 
-        if (index < 0)
+        currentIndex -= step;
+        if (currentIndex < 0)
         {
-            index += arrLength;
+            currentIndex += arrLength;
         }
 
-        int swap = temp;
-        temp = arr[index];
-        arr[index] = swap;
+        int temp = arr[startIndex];
+        bool isCircle = false;
+
+        //while(swapCount <= arrLength && !isCircle)
+        while (!isCircle)
+        {
+            if (currentIndex == startIndex)
+            {
+                isCircle = true;
+            }
+
+            int swap = temp;
+            temp = arr[currentIndex];
+            arr[currentIndex] = swap;
+            swapCount++;
+
+            currentIndex -= step;
+            if (currentIndex < 0)
+            {
+                currentIndex += arrLength;
+            }
+        }
+
+        startIndex++;
     }
 }
-
 //Write a program that:
 //•	Read an integer number N (N < 100) from the first line of the console, which represents size of the array
 //•	Read an integer array with the given size from the second line of the console
